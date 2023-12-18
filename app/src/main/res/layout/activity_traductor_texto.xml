@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TraductorTexto">
+
+    <TextView
+        android:id="@+id/textViewTraduccion"
+        android:layout_width="345dp"
+        android:layout_height="195dp"
+        android:background="@drawable/borde_texto"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIdiomaOrigen"
+        app:layout_constraintVertical_bias="0.432" />
+
+    <TextView
+        android:id="@+id/textViewTT"
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:background="@drawable/fondo_morado"
+        android:fontFamily="@font/tt_interphases_pro_trial_regular"
+        android:paddingStart="75dp"
+        android:paddingTop="10dp"
+        android:text="TRADUCTOR"
+        android:textColor="@color/blanco"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextIdiomaOrigen"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/editTextIdiomaOrigen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/editTextIdiomaOrigen"
+        android:layout_width="345dp"
+        android:layout_height="195dp"
+        android:background="@drawable/borde_texto"
+        android:fontFamily="@font/tt_interphases_pro_trial_regular"
+        android:gravity="top"
+        android:hint="Escribe o pega el texto aquí..."
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTraduccion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewTraduccion"
+        app:layout_constraintTop_toTopOf="@+id/textViewTT"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <ImageButton
+        android:id="@+id/imgBtnInvertir"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        android:background="@drawable/borde_boton"
+        android:contentDescription="Texto"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTraduccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIdiomaOrigen"
+        app:srcCompat="@mipmap/refresh2" />
+
+    <Button
+        android:id="@+id/btnElegirIdioma"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:background="@drawable/fondo_morado"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        android:text="ESPAÑOL"
+        android:textColor="@color/blanco"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBtnInvertir"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtnInvertir"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextIdiomaOrigen"
+        app:layout_constraintTop_toTopOf="@+id/imgBtnInvertir"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnIdiomaElegido"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:background="@drawable/fondo_morado"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        android:text="INGLÉS"
+        android:textColor="@color/blanco"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBtnInvertir"
+        app:layout_constraintEnd_toEndOf="@+id/editTextIdiomaOrigen"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnInvertir"
+        app:layout_constraintTop_toTopOf="@+id/imgBtnInvertir"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonTraducir"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:background="@drawable/borde_boton"
+        android:text="Traducir"
+        android:textColor="@color/blanco"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTraduccion"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/textViewTraduccion"
+        app:layout_constraintTop_toTopOf="@+id/textViewTraduccion"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <ImageButton
+        android:id="@+id/btnVolver1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTT"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.946"
+        app:srcCompat="@mipmap/icono_volver" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

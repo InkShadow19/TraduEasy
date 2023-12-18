@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "751833162012",
+    "firebase_url": "https://tradueasy-96e3a-default-rtdb.firebaseio.com",
+    "project_id": "tradueasy-96e3a",
+    "storage_bucket": "tradueasy-96e3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751833162012:android:865e78631f3197f2829ad9",
+        "android_client_info": {
+          "package_name": "com.example.tradueasy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751833162012-rj2pjua3i02v396j89jpi33i626pk656.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tradueasy",
+            "certificate_hash": "e50127667a0486ab961d602243b8fcc6477a9abc"
+          }
+        },
+        {
+          "client_id": "751833162012-q9ehn1f6m1iqhfoa1douvrne10bektf0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC04GA-68P6rxLo3dh7rWFPjq_bOIa9P1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "751833162012-q9ehn1f6m1iqhfoa1douvrne10bektf0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

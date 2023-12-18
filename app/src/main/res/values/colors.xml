@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lila">#B97EED</color>
+    <color name="celeste">#60EBDE</color>
+    <color name="plomo">#808080</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="azulito">#1941d1</color>
+    <color name="plomo_dark">#545454</color>
+    <color name="azul_dark">#1A253B</color>
+    <color name="azul_dark2">#0E194D</color>
+    <color name="plomo_light">#DBDBDB</color>
+    <color name="morado">#938ca6</color>
+    <color name="azul">#550e194d</color>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TraductorVoz">
+
+    <TextView
+        android:id="@+id/textViewTV"
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:background="@drawable/fondo_palo_rosa"
+        android:fontFamily="@font/tt_interphases_pro_trial_regular"
+        android:paddingStart="75dp"
+        android:paddingTop="10dp"
+        android:text="TRADUCTOR"
+        android:textColor="@color/azul_dark"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewVoz"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/textViewVoz"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/textViewVoz"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/fondo_plomo_claro"
+        android:enabled="true"
+        android:fontFamily="@font/tt_interphases_pro_trial_regular"
+        android:hint="Traducción..."
+        android:paddingStart="25dp"
+        android:paddingTop="25dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="25dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEspIng"
+        app:layout_constraintStart_toStartOf="@+id/textViewEspIng"
+        app:layout_constraintTop_toTopOf="@+id/textViewTV"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <ImageButton
+        android:id="@+id/imgBtnVoz"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/borde_boton"
+        android:contentDescription="Microfono"
+        android:onClick="BtnHablar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMic"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/textViewMic"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEspIng"
+        app:layout_constraintVertical_bias="0.115"
+        app:srcCompat="@mipmap/icon_micro" />
+
+    <TextView
+        android:id="@+id/textViewMic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tt_interphases_pro_trial_regular"
+        android:text="Para hablar, pulse el micrófono"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnVoz"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <TextView
+        android:id="@+id/textViewEspIng"
+        android:layout_width="275dp"
+        android:layout_height="55dp"
+        android:background="@drawable/fondo_palo_rosa"
+        android:fontFamily="@font/tt_interphases_pro_trial_regular"
+        android:paddingStart="45dp"
+        android:paddingTop="10dp"
+        android:text="Español a Inglés"
+        android:textColor="@color/azul_dark"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgBtnVoz"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/imgBtnVoz"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVoz"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <ImageButton
+        android:id="@+id/btnVolver2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTV"
+        app:layout_constraintHorizontal_bias="1.003"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.946"
+        app:srcCompat="@mipmap/icono_volver" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
